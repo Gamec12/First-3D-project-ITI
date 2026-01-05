@@ -19,10 +19,10 @@ public class NewCharacterMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        
+
 
         Vector3 NewVelocity = new Vector3(moveInput.x * speed, 0.0f, moveInput.y * speed);
-        rb.linearVelocity = new Vector3 (NewVelocity.x, rb.linearVelocity.y, NewVelocity.z);
+        rb.linearVelocity = new Vector3(NewVelocity.x, rb.linearVelocity.y, NewVelocity.z);
 
     }
 
