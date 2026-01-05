@@ -103,6 +103,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7122eccb-4898-4e11-aa97-7169f1201676",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "381a2b72-f2b2-447f-b4af-cfe2f88a9d37",
                     "path": "<Mouse>/delta",
                     "interactions": "",
