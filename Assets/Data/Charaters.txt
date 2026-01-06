@@ -1,0 +1,19 @@
+{
+
+	"Characters": [
+
+	
+	{"name" : "Verso",
+	"level" : 33,
+	"Strength" : 355},
+
+	{"name" : "Gustave",
+	"level" : 23,
+	"Strength" : 221}
+
+
+
+]
+
+
+}

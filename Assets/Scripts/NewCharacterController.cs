@@ -6,6 +6,7 @@ public class NewCharacterController : MonoBehaviour
 {
     [SerializeField] float speed = 3;
     [SerializeField] float mouseSensitivity;
+    [SerializeField] AudioManager audioManager;
     float xRotation = 0;
     Vector2 moveInput;
     Vector2 lookInput;
@@ -17,6 +18,7 @@ public class NewCharacterController : MonoBehaviour
 
     void Start()
     {
+        audioManager.playAudio("Background");
         characterController = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         thirdPerson.SetActive(true);
@@ -38,7 +40,6 @@ public class NewCharacterController : MonoBehaviour
             thirdPerson.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         bool isMoving = moveInput.magnitude > 0;
-        Debug.Log(isMoving);
         anim.SetBool("isRunning", isMoving);
 
         Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
@@ -60,5 +61,9 @@ public class NewCharacterController : MonoBehaviour
     public void OnLook(InputValue value)
     {
         lookInput = value.Get<Vector2>();
+    }
+    public void OnShoot(InputValue value)
+    {
+        audioManager.playAudio("Shoot");
     }
 }
