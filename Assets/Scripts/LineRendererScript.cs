@@ -28,7 +28,7 @@ public class LineRendererScript : MonoBehaviour
         positions.Add(cube2.transform.position);
         positions.Add(cube3.transform.position);
 
-        lineRenderer.numPositions = positions.Count;
+        lineRenderer.positionCount = positions.Count;
 
         lineRenderer.SetPositions(positions.ToArray());
     
